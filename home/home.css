@@ -13,8 +13,11 @@
 }
 
 body {
-    margin: 0px;
     background-color: var(--j);
+}
+
+main {
+    display: flex;
 }
 
 #navigation {
@@ -65,7 +68,7 @@ body {
 }
 
 #us {
-    margin: 40px 100px 80px 100px;
+    margin: 40px 100px 180px 100px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -97,4 +100,11 @@ body {
     font-size: 1.5em;
     width: 400px;
     margin-left: 6px;
+}
+
+#symbol {
+    width: 40%;
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
 }

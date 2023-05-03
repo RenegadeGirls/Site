@@ -38,12 +38,13 @@ main {
 
 .page {
     display: inline-block;
-    padding: 20px 2%;
+    padding: 20px 1.5%;
     font-family: "Poppins";
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--c);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .page > a {

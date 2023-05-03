@@ -1,0 +1,18 @@
+.slide-in-left {
+    animation: 0.9s ease 0.3s forwards slide-in-left;
+    transform: translateX(-100%);
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    70% {
+        transform: translateX(8%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

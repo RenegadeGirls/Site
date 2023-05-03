@@ -21,19 +21,20 @@ main {
 }
 
 #navigation {
-    padding: 0px 30px;
+    padding: 0px 50px;
     margin: 0px;
     width: 100%;
     display: flex;
     list-style-type: none;
     justify-content: right;
+    align-items: center;
     border-bottom: 3px solid var(--i);
     background-color: var(--h);
 }
 
 .page {
     display: inline-block;
-    padding: 30px 2%;
+    padding: 20px 2%;
     font-family: "Poppins";
     font-size: 1.3rem;
     font-weight: 500;
@@ -63,8 +64,13 @@ main {
     width: 100%;
 }
 
-#logo {
+#logo-wrapper {
     margin-right: auto;
+}
+
+#logo {
+    width: 60%;
+    min-width: 130px;
 }
 
 #us {

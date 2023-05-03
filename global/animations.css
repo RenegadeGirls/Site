@@ -1,11 +1,11 @@
 .slide-in-left {
     animation: 0.9s ease 0.3s forwards slide-in-left;
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
 }
 
 @keyframes slide-in-left {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-100vw);
     }
 
     70% {

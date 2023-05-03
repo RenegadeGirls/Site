@@ -1,6 +1,8 @@
 @import url("animations.css");
 @import url("poppins.css");
 @import url("notosans.css");
+@import url("comme.css");
+@import url("nunito.css");
 
 * {
     box-sizing: border-box;

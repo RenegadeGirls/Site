@@ -43,7 +43,7 @@ img {
     display: inline-block;
     padding: 20px 1.5rem;
     font-family: "Poppins";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--c);
     white-space: nowrap;
@@ -65,7 +65,7 @@ img {
     width: 0%;
     height: 4px;
     background-color: var(--e);
-    top: 2px;
+    bottom: 21px;
     transition: width 0.5s;
 }
 

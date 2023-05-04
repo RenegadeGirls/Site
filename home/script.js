@@ -9,6 +9,13 @@ onload = () => {
 
     if(!location.mobile) {
         const pages = [...document.getElementsByClassName("page")];
-        pages.forEach(page => page.classList.add("pagebar"));
+        pages.shift();
+        pages.forEach(page => {
+            page.classList.add("pagebar");
+
+            let [icon, para] = page.children[0].children;
+
+            icon.title = para.textContent;
+        });
     }
 };

@@ -14,6 +14,11 @@ img {
     -moz-user-select: none;
 }
 
+.page>a>i {
+    font-size: min(5rem, 30px);
+    display: none;
+}
+
 #content {
     margin: 0px;
     padding: 0px;
@@ -116,4 +121,17 @@ img {
     height: 40%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+@media (max-width: 900px) {
+    .page>a>p {
+        display: none;
+    }
+    .page>a>i {
+        display: block;
+    }
+    .pagebar>a::after {
+        height: 2px;
+        top: 5px;
+    }
 }

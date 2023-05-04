@@ -1,8 +1,26 @@
 @import url("animations.css");
+
 @import url("poppins.css");
 @import url("notosans.css");
 @import url("comme.css");
 @import url("nunito.css");
+
+:root {
+    --a: #2da5d7;
+    --b: #0658b2;
+    --c: #2a3368;
+    --d: #cae087;
+    --e: #a8cd3b;
+    --f: #bf57bf;
+    --g: #9798b4;
+    --h: #f3f4ee;
+    --i: #d1d3c5;
+    --j: #f5f5f3;
+    --k: #191c1f;
+    --l: #eae9e6;
+
+    font-size: 1vw;
+}
 
 * {
     box-sizing: border-box;

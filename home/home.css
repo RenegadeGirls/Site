@@ -11,6 +11,8 @@
     --j: #f5f5f3;
     --k: #191c1f;
     --l: #eae9e6;
+
+    font-size: 1vw;
 }
 
 body {
@@ -19,9 +21,17 @@ body {
 
 main {
     display: flex;
+    align-items: center;
+    margin-top: 5px;
     background-image: radial-gradient(var(--l) 1px, transparent 1px);
     background-size: 10px 10px;
     background-repeat: repeat;
+}
+
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 #navigation {
@@ -38,9 +48,9 @@ main {
 
 .page {
     display: inline-block;
-    padding: 20px 1.5%;
+    padding: 20px 1.5rem;
     font-family: "Poppins";
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--c);
     white-space: nowrap;
@@ -82,8 +92,7 @@ main {
 }
 
 #us {
-    margin: 40px 100px 180px 100px;
-    padding: 50px;
+    margin: 7rem 0px 10rem 11rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -100,20 +109,17 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    filter: drop-shadow(0px 0.05em 4px #0000003d);
+    filter: drop-shadow(0px 0.05rem 4px #0000003d);
 }
 
 #renegade {
-    font-size: 6em;
+    font-size: 6rem;
     font-weight: 600;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
 }
 
 #definition {
-    font-size: 1.5em;
-    width: 400px;
+    font-size: 1.5rem;
+    width: 70%;
     margin-left: 6px;
 }
 

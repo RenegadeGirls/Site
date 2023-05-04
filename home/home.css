@@ -53,7 +53,7 @@ img {
     color: inherit;
 }
 
-.page>a::after {
+.pagebar>a::after {
     content: "";
     position: relative;
     display: block;
@@ -64,9 +64,9 @@ img {
     transition: width 0.5s;
 }
 
-.page>a:hover::after,
-.page>a:focus::after,
-.page>a:active::after {
+.pagebar>a:hover::after,
+.pagebar>a:focus::after,
+.pagebar>a:active::after {
     width: 100%;
 }
 

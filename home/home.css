@@ -43,16 +43,19 @@ main {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--c);
-    cursor: pointer;
     white-space: nowrap;
 }
 
-.page > a {
+.page:not(#logo-wrapper) {
+    cursor: pointer;
+}
+
+.page>a {
     text-decoration: none;
     color: inherit;
 }
 
-.page > a::after {
+.page>a::after {
     content: "";
     position: relative;
     display: block;
@@ -63,9 +66,9 @@ main {
     transition: width 0.5s;
 }
 
-.page > a:hover::after,
-.page > a:focus::after,
-.page > a:active::after {
+.page>a:hover::after,
+.page>a:focus::after,
+.page>a:active::after {
     width: 100%;
 }
 

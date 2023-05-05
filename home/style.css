@@ -2,7 +2,7 @@ body {
     background-color: var(--j);
 }
 
-main {
+#main {
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -19,7 +19,7 @@ img {
     display: none;
 }
 
-#content {
+#top-content {
     margin: 0px;
     padding: 0px;
     background-image: radial-gradient(var(--l) 1px, transparent 1px);
@@ -123,6 +123,35 @@ img {
     margin-bottom: auto;
 }
 
+#more {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    font-size: 1.3rem;
+    font-family: "Comme";
+    color: var(--c);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#more>i {
+    margin-top: -1em;
+}
+
+#content {
+    position: absolute;
+    top: 100vh;
+    padding: 10px 50px;
+    font-size: 1.4rem;
+    font-family: "Nunito";
+    display: none;
+}
+
 @media (max-width: 900px) {
     .page>a>p {
         display: none;
@@ -134,7 +163,7 @@ img {
         height: 2px;
         top: 5px;
     }
-    main {
+    #main {
         flex-direction: column;
         font-size: 1.8vw;
     }

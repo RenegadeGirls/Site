@@ -3,11 +3,6 @@
     transform: translateX(-100vw);
 }
 
-.fade-in {
-    animation: 1.2s ease-out 1.5s forwards fade-in;
-    opacity: 0%;
-}
-
 @keyframes slide-in-left {
     0% {
         transform: translateX(-100vw);
@@ -19,14 +14,5 @@
 
     100% {
         transform: translateX(0%);
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
     }
 }

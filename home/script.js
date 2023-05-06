@@ -1,12 +1,8 @@
 const topContent = document.getElementById("top-content");
-const more = document.getElementById("more");
 
 onresize = () => {
     topContent.style.height = `${innerHeight - topContent.offsetTop}px`;
 };
-/*onscroll = () => {
-    more.style.opacity = `${(1.5 - scrollY / innerHeight * 2) * 100}%`;
-};*/
 
 onresize();
 

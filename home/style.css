@@ -122,50 +122,8 @@ img {
 
 #symbol {
     width: 40em;
-    margin: auto 120px auto 0;
+    margin: auto 120px -18px 0px;
     flex-grow: 1;
-}
-
-#more-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 15px;
-    font-size: 23px;
-    font-family: "Comme";
-    color: var(--c);
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
-#more {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 1.5rem;
-    transition: color 0.3s ease-in-out;
-}
-
-#more>i {
-    margin-top: -26px;
-}
-
-#more:hover {
-    color: var(--b);
-}
-
-#content {
-    position: absolute;
-    top: 100vh;
-    padding: 10px 50px;
-    font-size: 1.4rem;
-    font-family: "Nunito";
-    display: none;
 }
 
 @media (max-width: 900px) {
@@ -191,14 +149,14 @@ img {
         margin-left: auto;
         margin-right: auto;
         margin-top: 4em;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
     #symbol {
         margin-left: auto;
         margin-right: auto;
         width: calc(500px - 8em);
-        max-width: 50rem;
+        max-width: 70rem;
     }
 
     #definition {

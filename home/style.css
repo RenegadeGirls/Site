@@ -84,8 +84,13 @@ img {
     min-width: 130px;
 }
 
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
 #us {
-    margin: 7rem 0px 4em 11em;
+    margin: 7em 120px 4em 11em;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -97,7 +102,6 @@ img {
     font-family: "Poppins";
     background-color: var(--k);
     background-image: linear-gradient(170deg, var(--c) 15%, var(--b) 40%, var(--e) 100%);
-    background-size: 100%;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -112,25 +116,24 @@ img {
 
 #definition {
     font-size: 1.5em;
-    width: 70%;
+    width: 30rem;
     margin-left: 6px;
 }
 
 #symbol {
-    width: 40%;
-    height: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 40em;
+    margin: auto 120px auto 0;
+    flex-grow: 1;
 }
 
-#more {
+#more-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     bottom: 15px;
-    font-size: 1.3rem;
+    font-size: 23px;
     font-family: "Comme";
     color: var(--c);
     cursor: pointer;
@@ -139,8 +142,21 @@ img {
     -moz-user-select: none;
 }
 
+#more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
 #more>i {
-    margin-top: -1em;
+    margin-top: -26px;
+}
+
+#more:hover {
+    color: var(--b);
 }
 
 #content {
@@ -156,15 +172,40 @@ img {
     .page>a>p {
         display: none;
     }
+
     .page>a>i {
         display: block;
     }
+
     .pagebar>a::after {
         height: 2px;
         top: 5px;
     }
+
     #main {
         flex-direction: column;
-        font-size: 1.8vw;
+        font-size: 1.8rem;
+    }
+
+    #us {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em;
+        margin-bottom: 30px;
+    }
+
+    #symbol {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(500px - 8em);
+        max-width: 50rem;
+    }
+
+    #definition {
+        width: 60rem;
+    }
+
+    #search {
+        display: none;
     }
 }

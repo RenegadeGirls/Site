@@ -3,6 +3,12 @@
     transform: translateX(-100vw);
 }
 
+.slide-in-top {
+    animation: 0.4s ease 0.15s forwards slide-in-top;
+    transform: translateY(-110%);
+    z-index: -1000;
+}
+
 @keyframes slide-in-left {
     0% {
         transform: translateX(-100vw);
@@ -14,5 +20,12 @@
 
     100% {
         transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-top {
+    to {
+        transform: translateY(0%);
+        z-index: 0;
     }
 }

@@ -1,9 +1,12 @@
-@import url("animations.css");
+/* Fonts */
+@import url("font/poppins.css");
+@import url("font/notosans.css");
+@import url("font/comme.css");
+@import url("font/nunito.css");
 
-@import url("poppins.css");
-@import url("notosans.css");
-@import url("comme.css");
-@import url("nunito.css");
+/* Misc */
+@import url("generic/animations.css");
+@import url("generic/nav.css");
 
 :root {
     --a: #2da5d7;

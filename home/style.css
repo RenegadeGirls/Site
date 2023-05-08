@@ -56,12 +56,23 @@
     right: 30px;
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 1rem;
     font-size: 3rem;
 }
 
 .social {
     color: var(--c);
+    animation: pop-in ease 0.8s 1.2s forwards;
+    transform: scale(0%, 0%);
+}
+
+@keyframes pop-in {
+    50% {
+        transform: scale(120%, 120%);
+    }
+    100% {
+        transform: scale(100%, 100%);
+    }
 }
 
 @media (max-width: 900px) {

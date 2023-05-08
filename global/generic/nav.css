@@ -30,7 +30,7 @@ img {
     white-space: nowrap;
 }
 
-.page:not(#logo-wrapper) {
+.page:not(#logo-wrapper):hover {
     cursor: pointer;
 }
 

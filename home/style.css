@@ -61,7 +61,7 @@
 }
 
 .social {
-    color: black;
+    color: var(--c);
 }
 
 @media (max-width: 900px) {

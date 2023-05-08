@@ -56,7 +56,7 @@
     right: 30px;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 15px;
     font-size: 3rem;
 }
 
@@ -64,6 +64,11 @@
     color: var(--c);
     animation: pop-in ease 0.8s 1.2s forwards;
     transform: scale(0%, 0%);
+    transition: color 0.3s;
+}
+
+.social:hover {
+    color: var(--a);
 }
 
 @keyframes pop-in {
@@ -97,5 +102,9 @@
 
     #definition {
         width: 60rem;
+    }
+
+    #socials {
+        font-size: 7em;
     }
 }

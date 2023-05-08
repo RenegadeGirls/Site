@@ -2,23 +2,33 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
     border-top: 3px solid var(--i);
     font-family: "Comme";
     color: var(--c);
+    font-size: 1.2em;
 }
 
-#footer>*{
-    padding-top: 8px;
-    padding-bottom: 8px;
+#footer>div {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
 }
 
-#footer>:not(:last-child) {
-    border-right: 1px solid var(--a);
-    padding-right: 2rem;
+#footer>div>* {
+    padding: 0px 5px;
+    width: 100%;
 }
 
-#footer> :not(:first-child) {
-    border-left: 1px solid var(--a);
-    padding-left: 2rem;
+#footer>div:not(:last-child)::after {
+    content: "";
+    border: 1px solid var(--a);
+}
+
+@media (max-width: 900px) {
+    #footer {
+        font-size: 1.8em;
+    }
 }

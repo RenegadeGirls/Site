@@ -28,6 +28,8 @@ addEventListener("load", () => {
 
                         el.parentNode.insertBefore(copy, el);
                     });
+
+                    el.remove();
                 })
                 .catch(e => console.error(e))
                 .catch(() => console.error(`Could not find ${href}`))

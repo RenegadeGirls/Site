@@ -4,7 +4,7 @@
 }
 
 .slide-in-top {
-    animation: 0.4s ease 0.15s forwards slide-in-top;
+    animation: 0.4s ease 0.3s forwards slide-in-top;
     transform: translateY(-110%);
     z-index: -1000;
 }

@@ -1,0 +1,24 @@
+#footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+    border-top: 3px solid var(--i);
+    font-family: "Comme";
+    color: var(--c);
+}
+
+#footer>*{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#footer>:not(:last-child) {
+    border-right: 1px solid var(--a);
+    padding-right: 2rem;
+}
+
+#footer> :not(:first-child) {
+    border-left: 1px solid var(--a);
+    padding-left: 2rem;
+}

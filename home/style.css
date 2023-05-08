@@ -1,9 +1,3 @@
-#main {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
 #top-content {
     margin: 0px;
     padding: 0px;
@@ -15,6 +9,8 @@
 #main {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
 }
 
 #us {
@@ -52,6 +48,20 @@
     width: 40em;
     margin: auto 120px -18px 0px;
     flex-grow: 1;
+}
+
+#socials {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    font-size: 3rem;
+}
+
+.social {
+    color: black;
 }
 
 @media (max-width: 900px) {

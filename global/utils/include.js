@@ -1,5 +1,13 @@
+const ready = func => {
+    ready.waiting.push(func);
+};
+
+ready.waiting = [];
+ready.run = () => ready.waiting.forEach(f => f());
+
 addEventListener("load", () => {
     const elements = [...document.getElementsByTagName("div")];
+    let loaded = 0;
     elements.forEach(el => {
         if(el.hasAttribute("data-href")) {
             const href = el.getAttribute("data-href");
@@ -8,6 +16,9 @@ addEventListener("load", () => {
                 .then(html => html.text())
                 .then(text => {
                     const children = [...parser.parseFromString(text, "text/html").body.children];
+                    loaded++;
+
+                    if(loaded >= elements.length) ready.run();
 
                     children.forEach(child => {
                         // Is there a better way to do this that makes the scripts reload?

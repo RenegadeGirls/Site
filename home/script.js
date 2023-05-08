@@ -4,4 +4,4 @@ onresize = () => {
     topContent.style.height = `${innerHeight - topContent.offsetTop}px`;
 };
 
-onresize();
+ready(() => onresize());

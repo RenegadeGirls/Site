@@ -11,8 +11,8 @@
     font-family: "Comme";
     font-size: 2.5em;
     color: var(--c);
-    text-decoration: underline var(--e) 4px !important;
-    text-underline-offset: 4px;
+    text-decoration: underline var(--e) 4px;
+    /*text-underline-offset: 4px;*/
     transition: transform ease 0.3s;
 }
 

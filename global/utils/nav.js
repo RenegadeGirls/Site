@@ -21,10 +21,10 @@ const resizeNavBar = () => {
     bar.classList.add("trans-navbar");
 };
 
-if(!location.mobile) {
-    // Remove search bar & logo
-    pages.shift(), pages.pop();
+// Remove search bar & logo
+pages.shift(), pages.pop();
 
+if(!location.mobile) {
     pages.forEach((page, i) => {
         page.classList.add("pagebar");
 
@@ -46,5 +46,5 @@ if(!location.mobile) {
 
     addEventListener("resize", resizeNavBar);
 
-    resizeNavBar();
+    requestAnimationFrame(() => resizeNavBar());
 };

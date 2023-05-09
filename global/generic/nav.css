@@ -44,6 +44,7 @@ img {
     display: none;
 }
 
+/*
 .pagebar>a::after {
     content: "";
     position: relative;
@@ -60,6 +61,7 @@ img {
 .pagebar>a:active::after {
     width: 100%;
 }
+*/
 
 #logo-wrapper {
     margin-right: auto;
@@ -68,6 +70,17 @@ img {
 #logo {
     width: 60%;
     min-width: 130px;
+}
+
+#navbar {
+    position: absolute;
+    height: 0.3em;
+    background-color: var(--e);
+    border: none;
+}
+
+.trans-navbar {
+    transition: width 0.3s ease, left 0.3s ease;
 }
 
 @media (max-width: 900px) {
@@ -84,7 +97,8 @@ img {
         top: 5px;
     }
 
-    #search {
+    #search,
+    #navbar { /* TODO: Keep display unless mobile detected */
         display: none;
     }
 }

@@ -1,7 +1,8 @@
 const topContent = document.getElementById("top-content");
 
-onresize = () => {
+const resizeDots = () => {
     topContent.style.height = `${innerHeight - topContent.offsetTop}px`;
 };
 
-ready(() => onresize());
+ready(() => resizeDots());
+addEventListener("resize", () => resizeDots());

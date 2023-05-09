@@ -16,7 +16,9 @@
     transition: transform ease 0.3s;
 }
 
-.q-title:hover {
+.q-title:hover,
+.q-title:focus,
+.q-title:active {
     transform: skewX(-10deg) translateX(3%);
     cursor: pointer;
 }

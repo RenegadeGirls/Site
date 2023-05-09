@@ -67,7 +67,9 @@
     transition: color 0.3s;
 }
 
-.social:hover {
+.social:hover,
+.social:focus,
+.social:active {
     color: var(--a);
 }
 

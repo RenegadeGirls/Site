@@ -8,6 +8,7 @@ const hoverStatus = new Array(pages.length).fill(false);
 
 const moveNavBar = i => {
     const rect = pages[i].children[0].getBoundingClientRect();
+
     bar.style.left = `${rect.x}px`;
     bar.style.top = `calc(${rect.bottom}px - 0.5em)`;
     bar.style.width = `${rect.width}px`;
@@ -25,26 +26,27 @@ const resizeNavBar = () => {
 pages.shift(), pages.pop();
 
 if(!location.mobile) {
-    pages.forEach((page, i) => {
-        page.classList.add("pagebar");
+    document.fonts.onloadingdone = () => {
+        pages.forEach((page, i) => {
+            page.classList.add("pagebar");
 
-        const [icon, para] = page.children[0].children;
-        icon.title = para.textContent;
+            const [icon, para] = page.children[0].children;
+            icon.title = para.textContent;
 
-        page.addEventListener("mouseover", () => {
-            hoverStatus[i] = true;
-            moveNavBar(i);
+            page.addEventListener("mouseover", () => {
+                hoverStatus[i] = true;
+                moveNavBar(i);
+            });
+            page.addEventListener("mouseleave", () => {
+                hoverStatus[i] = false;
+
+                requestAnimationFrame(() => {
+                    if(!hoverStatus.reduce((acc, cur) => acc || cur, false)) moveNavBar(defaultHover);
+                })
+            });
         });
-        page.addEventListener("mouseleave", () => {
-            hoverStatus[i] = false;
 
-            requestAnimationFrame(() => {
-                if(!hoverStatus.reduce((acc, cur) => acc || cur, false)) moveNavBar(defaultHover);
-            })
-        });
-    });
-
-    addEventListener("resize", resizeNavBar);
-
-    requestAnimationFrame(() => resizeNavBar());
-};
+        addEventListener("resize", resizeNavBar);
+        resizeNavBar();
+    }
+}

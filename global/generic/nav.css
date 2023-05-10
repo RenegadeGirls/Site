@@ -23,7 +23,7 @@ img {
 .page {
     display: inline-block;
     padding: 20px 1.5rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 1.7rem;
     font-weight: 500;
     color: var(--c);
@@ -43,25 +43,6 @@ img {
     font-size: min(5rem, 30px);
     display: none;
 }
-
-/*
-.pagebar>a::after {
-    content: "";
-    position: relative;
-    display: block;
-    width: 0%;
-    height: 4px;
-    background-color: var(--e);
-    bottom: 21px;
-    transition: width 0.5s;
-}
-
-.pagebar>a:hover::after,
-.pagebar>a:focus::after,
-.pagebar>a:active::after {
-    width: 100%;
-}
-*/
 
 #logo-wrapper {
     margin-right: auto;

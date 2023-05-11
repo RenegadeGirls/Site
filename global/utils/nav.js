@@ -26,27 +26,28 @@ const resizeNavBar = () => {
 pages.shift(), pages.pop();
 
 if(!location.mobile) {
-    document.fonts.onloadingdone = () => {
-        pages.forEach((page, i) => {
-            page.classList.add("pagebar");
+    document.fonts.ready
+        .then(() => {
+            pages.forEach((page, i) => {
+                page.classList.add("pagebar");
 
-            const [icon, para] = page.children[0].children;
-            icon.title = para.textContent;
+                const [icon, para] = page.children[0].children;
+                icon.title = para.textContent;
 
-            page.addEventListener("mouseover", () => {
-                hoverStatus[i] = true;
-                moveNavBar(i);
+                page.addEventListener("mouseover", () => {
+                    hoverStatus[i] = true;
+                    moveNavBar(i);
+                });
+                page.addEventListener("mouseleave", () => {
+                    hoverStatus[i] = false;
+
+                    requestAnimationFrame(() => {
+                        if(!hoverStatus.reduce((acc, cur) => acc || cur, false)) moveNavBar(defaultHover);
+                    })
+                });
             });
-            page.addEventListener("mouseleave", () => {
-                hoverStatus[i] = false;
 
-                requestAnimationFrame(() => {
-                    if(!hoverStatus.reduce((acc, cur) => acc || cur, false)) moveNavBar(defaultHover);
-                })
-            });
-        });
-
-        addEventListener("resize", resizeNavBar);
-        resizeNavBar();
-    }
+            addEventListener("resize", resizeNavBar);
+            resizeNavBar();
+        })
 }

@@ -32,7 +32,7 @@ addEventListener("load", () => {
 
                     el.remove();
                 })
-                .catch(() => console.error(`Could not find ${href}`));
+                .catch(() => console.error(`Could not find ${href}`))
 
             total++;
         }

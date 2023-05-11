@@ -58,6 +58,7 @@ img {
     height: 0.3rem;
     background-color: var(--e);
     border: none;
+    pointer-events: none;
 }
 
 .trans-navbar {

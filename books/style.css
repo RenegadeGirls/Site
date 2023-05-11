@@ -1,0 +1,36 @@
+#title-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title {
+    font-family: "Comme";
+    font-size: 3em;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#content {
+    width: 100%;
+    gap: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.7em;
+}
+
+#description {
+    width: 50%;
+    font-family: "Nunito";
+    font-size: 1.1em;
+    height: fit-content;
+}
+
+#cover {
+    width: 30em;
+    border: 4px solid var(--i);
+    border-radius: 5px;
+}

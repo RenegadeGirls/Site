@@ -83,7 +83,7 @@ img {
     }
 
     #navbar {
-        transform: translateY(4px);
+        transform: translateY(8px);
         height: 0.5rem;
     }
 }

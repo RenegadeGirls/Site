@@ -10,7 +10,7 @@ const moveNavBar = i => {
     const rect = pages[i].children[0].getBoundingClientRect();
 
     bar.style.left = `${rect.x}px`;
-    bar.style.top = `calc(${rect.y + rect.height / 2}px + 0.8em)`;
+    bar.style.top = `calc(${rect.y + scrollY + rect.height / 2}px + 0.8em)`;
     bar.style.width = `${rect.width}px`;
 
     hover = i;
@@ -18,7 +18,7 @@ const moveNavBar = i => {
 const resizeNavBar = () => {
     bar.classList.remove("trans-navbar");
     moveNavBar(hover);
-    bar.offsetHeight; // Trigger reload
+    bar.offsetHeight; // Force trigger reload
     bar.classList.add("trans-navbar");
 };
 

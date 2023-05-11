@@ -8,6 +8,7 @@ ready.run = () => ready.waiting.forEach(f => f());
 addEventListener("load", () => {
     const elements = [...document.getElementsByTagName("div")];
     let loaded = 0;
+    let total = 0;
     elements.forEach(el => {
         if(el.hasAttribute("data-href")) {
             const href = el.getAttribute("data-href");
@@ -18,7 +19,7 @@ addEventListener("load", () => {
                     const children = [...parser.parseFromString(text, "text/html").body.children];
                     loaded++;
 
-                    if(loaded >= elements.length) ready.run();
+                    if(loaded >= total) ready.run();
 
                     children.forEach(child => {
                         // Is there a better way to do this that makes the scripts reload?
@@ -31,7 +32,11 @@ addEventListener("load", () => {
 
                     el.remove();
                 })
-                .catch(() => console.error(`Could not find ${href}`))
+                .catch(() => console.error(`Could not find ${href}`));
+
+            total++;
         }
     });
+
+    if(total == 0) ready.run();
 });

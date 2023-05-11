@@ -67,9 +67,9 @@
     font-size: 3.5rem;
 }
 
-.social:hover,
-.social:focus,
-.social:active {
+.social.h:hover,
+.social.h:focus,
+.social.h:active {
     color: var(--a);
 }
 

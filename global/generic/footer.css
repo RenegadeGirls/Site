@@ -11,18 +11,18 @@
     font-size: 1.2em;
 }
 
-#footer>div {
+#footer > div {
     flex-grow: 1;
     text-align: center;
     display: flex;
 }
 
-#footer>div>* {
+#footer > div > * {
     padding: 0px 5px;
     width: 100%;
 }
 
-#footer>div:not(:last-child)::after {
+#footer > div:not(:last-child)::after {
     content: "";
     border: 1px solid var(--a);
 }

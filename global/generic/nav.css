@@ -34,12 +34,12 @@ img {
     cursor: pointer;
 }
 
-.page>a {
+.page > a {
     text-decoration: none;
     color: inherit;
 }
 
-.page>a>i {
+.page > a > i {
     font-size: min(5rem, 30px);
     display: none;
 }
@@ -66,15 +66,15 @@ img {
 }
 
 @media (max-width: 900px) {
-    .page>a>p {
+    .page > a > p {
         display: none;
     }
 
-    .page>a>i {
+    .page > a > i {
         display: block;
     }
 
-    .pagebar>a::after {
+    .pagebar > a::after {
         height: 2px;
         top: 5px;
     }

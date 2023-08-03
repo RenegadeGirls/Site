@@ -1,9 +1,3 @@
-fetch("http://localhost:3000/api/programs", {
-    method: "GET",
-    headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json"
-    }
-})
+fetch(`${location.origin}/api/programs/`)
     .then(data => data.json())
     .then(json => console.log(json))

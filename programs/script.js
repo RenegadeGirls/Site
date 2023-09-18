@@ -29,7 +29,7 @@ function spotText(spots) {
 
 function generatePrograms(json) {
     const programs = document.getElementById("programs");
-    console.log(json);
+    if(json.series.length != 0) programs.hidden = false;
 
     json.series.forEach(program => {
         const location = program.location_series.location.name;

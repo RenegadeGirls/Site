@@ -4,10 +4,10 @@
 }
 
 #programs {
-    margin: 9rem 10rem 4rem 10rem;
+    margin: 4rem 10rem 4rem 10rem;
     padding: 3rem 0px 0px 0px;
     border-radius: 7px;
-    filter: drop-shadow(0px 4px 3px #00000037);
+    filter: drop-shadow(0px 3px 3px #00000037);
     background-color: var(--l);
 }
 

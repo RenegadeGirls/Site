@@ -1,9 +1,6 @@
 #top-content {
     margin: 0px;
     padding: 0px;
-    background-image: radial-gradient(var(--l) 1px, transparent 1px);
-    background-size: 10px 10px;
-    background-repeat: repeat;
 }
 
 #main {

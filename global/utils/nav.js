@@ -22,8 +22,8 @@ const resizeNavBar = () => {
     bar.classList.add("trans-navbar");
 };
 
-// Remove search bar & logo
-pages.shift(), pages.pop();
+// Remove logo
+pages.shift();
 
 if(!location.mobile) {
     document.fonts.ready

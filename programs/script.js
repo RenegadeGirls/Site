@@ -31,6 +31,8 @@ function generatePrograms(json) {
     const programs = document.getElementById("programs");
     if(json.series.length != 0) programs.hidden = false;
 
+    console.log(json.series);
+
     json.series.forEach(program => {
         const location = program.location_series.location.name;
         const neighborhood = program.location_series.location.neighborhood;
@@ -40,6 +42,7 @@ function generatePrograms(json) {
         const ageMin = program.start_months_old / 12;
         const ageMax = program.end_months_old / 12;
         const days = program.sessions;
+        const url = program.web_url;
 
         const startEpochTime = days.at(0).start_time;
         const endEpochTime = days.at(-1).end_time;
@@ -60,9 +63,9 @@ function generatePrograms(json) {
                 </p>
             </div>
             <div class="info">
-                <p class="name">
+                <a class="name" target="_blank" href="${url}">
                     ${title}
-                </p>
+                </a>
                 <p class="location">
                     @ ${location} (${neighborhood})
                 </p>

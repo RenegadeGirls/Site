@@ -4,7 +4,7 @@
 }
 
 #programs {
-    margin: 4rem 10rem 4rem 10rem;
+    margin: 4rem 10rem 2rem 10rem;
     padding: 3rem 0px 0px 0px;
     border-radius: 7px;
     filter: drop-shadow(0px 3px 3px #00000037);
@@ -13,7 +13,6 @@
 
 .program {
     list-style-type: none;
-    border-top: 2px solid var(--i);
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
@@ -79,4 +78,62 @@
     margin-left: auto;
     margin-right: 5rem;
     color: var(--m);
+}
+
+#aditl {
+    display: block;
+    text-align: center;
+    font-size: 2.7em;
+    margin-top: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#day {
+    font-family: "Comme", sans-serif;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    font-size: 1.1em;
+}
+
+#schedule {
+    margin-top: 3rem;
+    border-spacing: 0px;
+    border-radius: 10px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.timing {
+    width: 20%;
+    padding-left: 30px;
+    margin: 0px;
+    height: 80px;
+    border-right: 1px solid black;
+}
+
+.activity {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+tr:first-child > td:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child > td:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child > td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--l);
 }

@@ -1,9 +1,9 @@
-fetch(`${location.origin}/api/programs/`)
+fetch(`${ location.origin }/api/programs/`)
     .then(data => data.json())
     .then(json => generatePrograms(json))
 
-const displayMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const displayDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const displayMonths = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+const displayDays = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
 
 const dateSettings = {
     timeZone: "America/Los_Angeles",
@@ -21,7 +21,7 @@ function spotText(spots) {
     if(spots == 0) {
         return "Sold out!";
     } else if(spots <= 3) {
-        return `Only ${spots} spot${spots == 1 ? "" : "s"} left!`;
+        return `Only ${ spots } spot${ spots == 1 ? "" : "s" } left!`;
     } else {
         return "";
     }
@@ -30,8 +30,6 @@ function spotText(spots) {
 function generatePrograms(json) {
     const programs = document.getElementById("programs");
     if(json.series.length != 0) programs.hidden = false;
-
-    console.log(json.series);
 
     json.series.forEach(program => {
         const location = program.location_series.location.name;
@@ -53,28 +51,28 @@ function generatePrograms(json) {
         programs.innerHTML += `<li class="program">
             <div class="timeholder">
                 <p class="timeframe">
-                    ${displayMonths[startTime.getMonth()]} ${startTime.getDate()}–${endTime.getDate()}
+                    ${ displayMonths[ startTime.getMonth() ] } ${ startTime.getDate() }–${ endTime.getDate() }
                 </p>
                 <p class="days">
-                    ${displayDays[startTime.getDay()]}–${displayDays[endTime.getDay()]}, ${time(startTime)}–${time(endTime)}
+                    ${ displayDays[ startTime.getDay() ] }–${ displayDays[ endTime.getDay() ] }, ${ time(startTime) }–${ time(endTime) }
                 </p>
                 <p class="age-range">
-                    ${ageMin} to ${ageMax} years olds
+                    ${ ageMin } to ${ ageMax } years olds
                 </p>
             </div>
             <div class="info">
-                <a class="name" target="_blank" href="${url}">
-                    ${title}
+                <a class="name" target="_blank" href="${ url }">
+                    ${ title }
                 </a>
                 <p class="location">
-                    @ ${location} (${neighborhood})
+                    @ ${ location } (${ neighborhood })
                 </p>
                 <p class="price">
-                    $${price}
+                    $${ price }
                 </p>
             </div>
             <p class="status">
-                ${spotText(spots)}
+                ${ spotText(spots) }
             </p>
         </li>`;
     });

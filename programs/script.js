@@ -2,8 +2,8 @@ fetch(`${ location.origin }/api/programs/`)
     .then(data => data.json())
     .then(json => generatePrograms(json))
 
-const displayMonths = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
-const displayDays = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
+const displayMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const displayDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const dateSettings = {
     timeZone: "America/Los_Angeles",
@@ -51,10 +51,10 @@ function generatePrograms(json) {
         programs.innerHTML += `<li class="program">
             <div class="timeholder">
                 <p class="timeframe">
-                    ${ displayMonths[ startTime.getMonth() ] } ${ startTime.getDate() }–${ endTime.getDate() }
+                    ${ displayMonths[startTime.getMonth()] } ${ startTime.getDate() }–${ endTime.getDate() }
                 </p>
                 <p class="days">
-                    ${ displayDays[ startTime.getDay() ] }–${ displayDays[ endTime.getDay() ] }, ${ time(startTime) }–${ time(endTime) }
+                    ${ displayDays[startTime.getDay()] }–${ displayDays[endTime.getDay()] }, ${ time(startTime) }–${ time(endTime) }
                 </p>
                 <p class="age-range">
                     ${ ageMin } to ${ ageMax } years olds

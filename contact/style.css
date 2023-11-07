@@ -1,0 +1,21 @@
+#content {
+    margin: 4rem 5rem 4rem 5rem;
+}
+
+#email {
+    font-family: "Comme";
+    font-size: 1.2em;
+}
+
+#employment {
+    font-family: "Poppins";
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 5rem;
+}
+
+#about {
+    font-family: "Nunito";
+    font-size: 1.2em;
+    max-width: 900px;
+}

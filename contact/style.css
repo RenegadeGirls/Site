@@ -9,13 +9,26 @@
 
 #employment {
     font-family: "Poppins";
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 500;
     margin-top: 5rem;
+    margin-bottom: 0px;
 }
 
 #about {
     font-family: "Nunito";
     font-size: 1.2em;
     max-width: 900px;
+}
+
+.type > h4 {
+    font-family: "Poppins";
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.type > p {
+    font-family: "Nunito";
+    font-size: 1.1em;
 }

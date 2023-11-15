@@ -1,6 +1,10 @@
+#content {
+    margin: 5rem 5rem 6rem 5rem;
+}
+
 .question {
     width: 60%;
-    margin: 4rem 9rem 0px 9rem;
+    margin: 4rem 0px;
     font-size: 15px;
 }
 
@@ -33,11 +37,6 @@
     margin-top: -0.8em;
 }
 
-#content {
-    margin-top: 5rem;
-    margin-bottom: 8rem;
-}
-
 #banner {
     width: 100%;
     height: auto;
@@ -50,4 +49,29 @@
         font-size: 11px;
         width: 80%;
     }
+}
+
+
+.type > h4 {
+    font-family: "Poppins";
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.type > p {
+    font-family: "Nunito";
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+.list {
+    font-family: "Nunito";
+    margin-bottom: 2em;
+}
+
+.list > h6 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

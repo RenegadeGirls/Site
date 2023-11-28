@@ -103,3 +103,9 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.salary {
+    margin-top: 3em;
+    font-size: 1.6em;
+    font-style: italic;
+}

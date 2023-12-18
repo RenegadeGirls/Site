@@ -1,0 +1,49 @@
+#content {
+    margin: 4rem 9rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+#explain {
+    flex-grow: 1;
+}
+
+#ask,
+#howto {
+    font-family: "Comme";
+    font-size: 1.2em;
+}
+
+#methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.donate {
+    display: block;
+    width: 1.7em;
+    height: 1.7em;
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 2.8em;
+    background-color: var(--a);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.donate:hover {
+    background-color: var(--b);
+}
+
+#info {
+    font-family: "Noto Sans";
+    font-size: 1.6em;
+    line-height: 0.4em;
+    text-align: center;
+    margin-top: 2.8em;
+    margin-bottom: 2.2em;
+}

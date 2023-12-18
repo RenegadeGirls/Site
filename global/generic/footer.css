@@ -4,11 +4,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 1.5em 2em;
     border-top: 3px solid var(--i);
     font-family: "Comme";
     color: var(--c);
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 #footer > div {
@@ -18,17 +18,11 @@
 }
 
 #footer > div > * {
-    padding: 0px 5px;
+    padding: 0px 0.2em;
     width: 100%;
 }
 
 #footer > div:not(:last-child)::after {
     content: "";
     border: 1px solid var(--a);
-}
-
-@media (max-width: 900px) {
-    #footer {
-        font-size: 1.8em;
-    }
 }

@@ -1,8 +1,8 @@
 #content {
-    margin: 4rem 9rem;
+    margin: 4em 6em;
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 4em;
 }
 
 #explain {
@@ -45,5 +45,5 @@
     line-height: 0.4em;
     text-align: center;
     margin-top: 2.8em;
-    margin-bottom: 2.2em;
+    margin-bottom: 2.4em;
 }

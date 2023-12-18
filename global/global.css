@@ -24,7 +24,7 @@
     --l: #eae9e6;
     --m: #be1010;
 
-    font-size: 1vw;
+    font-size: max(1vw, 8px);
 }
 
 * {

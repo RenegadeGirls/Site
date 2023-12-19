@@ -48,9 +48,12 @@ img {
     margin-right: auto;
 }
 
-#logo {
-    width: 60%;
-    min-width: 130px;
+.logo {
+    height: 5.5em;
+}
+
+#logo-small {
+    display: none;
 }
 
 #navbar {
@@ -87,5 +90,29 @@ img {
     #navbar {
         transform: translateY(8px);
         height: 0.5rem;
+    }
+}
+
+@media (max-width: 520px) {
+    #logo-big {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .page {
+        padding: 20px 8px;
+    }
+
+    .page > a > i {
+        font-size: 25px;
+    }
+
+    .logo {
+        height: 50px;
     }
 }

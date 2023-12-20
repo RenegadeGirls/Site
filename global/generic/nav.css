@@ -103,7 +103,7 @@ img {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 525px) {
     .page {
         padding: 20px 8px;
     }

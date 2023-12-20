@@ -25,10 +25,47 @@
 #description {
     width: 50%;
     font-family: "Nunito";
-    font-size: 1.1em;
+    font-size: 1.2em;
     height: fit-content;
 }
 
 #cover {
     width: 30em;
+}
+
+@media (max-width: 900px) {
+    #content {
+        justify-content: space-between;
+    }
+
+    #description {
+        margin-left: 50px;
+    }
+
+    #cover {
+        width: 20em;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #description {
+        margin-left: 0px;
+        width: 80%;
+    }
+
+    #cover {
+        width: 30em;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    #title {
+        font-size: 22px;
+    }
 }

@@ -96,7 +96,7 @@
     #symbol {
         margin-left: auto;
         margin-right: auto;
-        width: calc(500px - 8em);
+        width: calc(400px - 8em);
         max-width: 70rem;
     }
 
@@ -106,5 +106,23 @@
 
     .social {
         font-size: min(8rem, 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    #renegade {
+        font-size: 11vw;
+    }
+
+    #definition {
+        font-size: 3.5vw;
+        width: fit-content;
+    }
+
+    #us {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }

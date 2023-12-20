@@ -142,3 +142,14 @@ tr:last-child > td:last-child {
 tr:nth-child(odd) {
     background-color: var(--l);
 }
+
+@media (max-width: 775px) {
+    #programs {
+        margin: 3rem 6rem 4rem 6rem;
+    }
+
+    #day {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}

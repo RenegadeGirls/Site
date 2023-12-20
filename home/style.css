@@ -80,7 +80,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 975px) {
     #main {
         flex-direction: column;
         font-size: 1.8rem;
@@ -100,22 +100,12 @@
         max-width: 70rem;
     }
 
-    #definition {
-        width: 60rem;
-    }
-
-    .social {
-        font-size: min(8rem, 40px);
-    }
-}
-
-@media (max-width: 600px) {
     #renegade {
-        font-size: 11vw;
+        font-size: max(10vw, 50px);
     }
 
     #definition {
-        font-size: 3.5vw;
+        font-size: max(3vw, 16px);
         width: fit-content;
     }
 
@@ -124,5 +114,9 @@
         margin-right: 0px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .social {
+        font-size: min(8rem, 40px);
     }
 }

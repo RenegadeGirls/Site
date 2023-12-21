@@ -74,10 +74,6 @@
     margin: 1em 0px;
 }
 
-.type {
-    transition: height 1s linear;
-}
-
 .type > h4 {
     font-family: "Poppins";
     font-size: 1.8em;

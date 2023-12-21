@@ -111,8 +111,9 @@ table {
 }
 
 .timing {
-    width: 20%;
+    width: max(20%, 60px);
     padding-left: 30px;
+    padding-right: 30px;
     margin: 0px;
     height: 80px;
     border-right: 1px solid black;
@@ -143,6 +144,16 @@ tr:nth-child(odd) {
     background-color: var(--l);
 }
 
+@media (max-width: 850px) {
+    .info {
+        margin-left: 4rem;
+    }
+
+    .timeholder {
+        margin-left: 1rem;
+    }
+}
+
 @media (max-width: 775px) {
     #programs {
         margin: 3rem 6rem 4rem 6rem;
@@ -151,5 +162,66 @@ tr:nth-child(odd) {
     #day {
         margin-left: 8rem;
         margin-right: 8rem;
+    }
+}
+
+@media (max-width: 750px) {
+    #programs {
+        margin: 3rem 5rem 4rem 5rem;
+    }
+
+    #day {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .timing {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 60px;
+    }
+
+    .activity {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .info {
+        margin-left: 1rem;
+    }
+
+    .timeholder {
+        margin-left: 2rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .info {
+        margin-left: 1rem;
+    }
+
+    .status {
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #day {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .timing {
+        width: 90px;
+    }
+
+    .status {
+        margin-right: 1rem;
+    }
+
+    #programs {
+        margin: 3rem 3rem 1rem 3rem;
     }
 }

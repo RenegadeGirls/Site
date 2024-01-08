@@ -1,4 +1,4 @@
-fetch(`${ location.origin }/functions/api`)
+fetch(`${ location.origin }/api`)
     .then(data => {
         console.log(data);
         return data.json();

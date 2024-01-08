@@ -1,4 +1,4 @@
-fetch("https://worker-programs-api.99thedark.workers.dev/")
+fetch(`${ location.origin }/functions/api`)
     .then(data => {
         console.log(data);
         return data.json();

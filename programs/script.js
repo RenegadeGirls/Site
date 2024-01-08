@@ -1,5 +1,8 @@
-fetch(`${ location.origin }/api/programs/`)
-    .then(data => data.json())
+fetch("https://worker-programs-api.99thedark.workers.dev/")
+    .then(data => {
+        console.log(data);
+        return data.json();
+    })
     .then(json => generatePrograms(json))
 
 const displayMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

@@ -1,8 +1,5 @@
 fetch(`${ location.origin }/api`)
-    .then(data => {
-        console.log(data);
-        return data.json();
-    })
+    .then(data => data.json())
     .then(json => generatePrograms(json))
 
 const displayMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

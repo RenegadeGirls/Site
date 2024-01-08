@@ -1,3 +1,3 @@
 export function onRequest(ctx) {
-    return fetch("https://worker-programs-api.99thedark.workers.dev/");
+    return fetch("https://worker-api.president-a04.workers.dev/");
 }

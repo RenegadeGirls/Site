@@ -8,6 +8,7 @@
 @import url("generic/animations.css");
 @import url("generic/nav.css");
 @import url("generic/footer.css");
+@import url("generic/banner.css");
 
 :root {
     --a: #2da5d7;

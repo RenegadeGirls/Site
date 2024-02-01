@@ -1,0 +1,21 @@
+.banner {
+    padding: 2.5rem 0px;
+    margin: 0px;
+    border-bottom: 2px solid var(--i);
+}
+
+#temp_open {
+    margin: 0px 10rem;
+    font-size: 1.75em;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+#temp_discount {
+    margin: 0px 10rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}

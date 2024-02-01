@@ -3,22 +3,6 @@
     height: 100%;
 }
 
-#temp_open {
-    margin: 3rem 10rem 0.5rem 10rem;
-    font-size: 1.75em;
-    font-weight: 500;
-    font-family: "Poppins";
-    text-align: center;
-}
-
-#temp_discount {
-    margin: 0.5rem 10rem 1rem 10rem;
-    font-size: 1.5em;
-    font-weight: 400;
-    font-family: "Poppins";
-    text-align: center;
-}
-
 #programs {
     margin: 4rem 10rem 5rem 10rem;
     padding: 1rem 0px 0px 0px;
